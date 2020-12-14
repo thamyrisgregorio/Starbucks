@@ -6,7 +6,7 @@ Dado('que eu estou na tela inicial do Luma') do
    click_link_or_button "Create an Account" 
   end
   
-  Quando('é preenchido todos os campos obrigatorios') do
+  Quando('e preenchido todos os campos obrigatorios') do
     primeiro_nome = Faker::Name.first_name
     find("#firstname").set primeiro_nome
     find("#lastname").set Faker::Name.last_name
